@@ -1,8 +1,13 @@
-CC=clang
+CC=gcc
 CFLAGS=-g -Wall -Werror
 
-lab1: lab1.o
-	clang -o $@ $^
+all: bin/shell bin/ls
+
+bin/shell: shell.o 
+	gcc -o $@ $^
+
+bin/ls: ls.o
+	gcc -o $@ $^
 
 clean:
-	rm -f *.o lab1
+	rm -f *.o bin/*
