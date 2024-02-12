@@ -19,13 +19,13 @@ Bash is great, for most people. When dealing with larger pipelines, bash often r
 Installation is as simple as can be. First step is to clone the repo.
 
 ```bash
-  git clone <this_repo>
+  git clone https://github.com/walidabualafia/shell.git
 ```
 
 Once you have the repo handy, you can compile and run the `C` implementation.
 
 ```bash
-  cd <this_repo>
+  cd shell
   make
   ./shell
 ```
@@ -33,7 +33,7 @@ Once you have the repo handy, you can compile and run the `C` implementation.
 If you want to run the `Go` implementation, you can either compile it, or test it by running the `Go` interpreter:
 
 ```bash
-  cd <this_repo>/go 
+  cd shell/go 
 
   # To compile
   go build
